@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;500;700&family=M+PLUS+Rounded+1c:wght@300;500&family=Poppins:wght@200;300;400;500;600;800&family=Sora:wght@200;400;700&family=Zen+Old+Mincho&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: black;
+  appearance: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+.all{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+}
+
+.top-left{
+  height: auto;
+  justify-content: flex-end;
+  border-right: 1px solid;
+  display: flex;
+  user-select: none;
+}
+
+
+.top-left .icon{
+  position: sticky;
+  top: 0;
+  font-weight: lighter;
+  margin-right: 0;
+  height: 100vh;
+  width: 220px;
+  list-style: none;
+  font-size: 1.2rem;
+  margin-left: auto;
+  z-index: 0;
+}
+
+.logo_box{
+  display: flex;
+  align-items: center;
+  color: white;
+  width: auto;
+  transition:  0.4s ease;
+}
+
+.logo_box p{
+  margin: 0;
+  padding-left: 20px;
+}
+
+.logo_box:hover{
+  opacity: 0.5;
+}
+
+.top-left .icon a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+.top-left .icon i{
+
+  line-height: 4rem;
+  font-size: 1.5rem;
+  padding-right: 10%;
+}
+
+.top-left .icon img{
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.top-left .icon button{
+  background-color:rgb(29, 161, 242) ;
+  width: 200px;
+  margin-right: 15%;
+  font-size: 1rem;
+  padding: 5% 10%;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+}
+
+.top-left .icon .user-info {
+  position: relative;
+  display: flex;
+  background-color: black;
+  margin-top: 120%;
+  border-radius: 2rem;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+.top-left .icon .user-info:hover{
+  opacity: 0.5;
+  user-select: none;
+  z-index: 3;
+}
+
+
+.top-left .icon .user-info .circle{
+  width: 40px;
+	height: 40px;
+	position: relative;
+	border: solid rgb(196, 219, 238) 2px;
+	border-radius: 50%;
+	box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgb(196, 219, 238);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.top-left .icon .user-info .circle img{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+  background-color: rgb(196, 219, 238);
+}
+
+.top-left .icon .user-info .user_name p{
+  margin-bottom: 0;
+  background-color: black;
+  width: auto;
+}
+
+.top-left .icon .user-info .user_name{
+  color: rgb(203, 203, 203);
+  margin-bottom: 0;
+}
+
+.top-left .icon .user-info .user_name .adress{
+  font-size: small;
+}
+
+/* main section */
+
+/* typing tweet */
+
+.main{
+  position: relative;
+  border-right: 1px solid;
+  width: 100%;
+
+}
+
+.main .home{
+  top: 0%;
+  position: sticky;
+  width: 100% auto; 
+  height: 53px;
+  padding: 0px 15px;
+  color: white;
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  opacity: 0.9;
+  user-select: none;
+}
+
+
+.main .home img{
+  width: 15px;
+}
+
+
+.main .content .tweet{
+  display: flex;
+  border-bottom: 1px solid;
+  user-select: none;
+}
+
+ .main .content .tweet input{
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  color: white;
+} 
+
+
+
+.main .content .tweet .circle{
+  width: 45px;
+	height: 40px;
+	position: relative;
+	border: solid rgb(204,214,221) 2px;
+	border-radius: 50%;
+	box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgb(204,214,221);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+
+.main .content .tweet .circle img{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+  background-color:rgb(204,214,221);
+}
+
+
+.main .content .tweet .text-box{
+  position: relative;
+  width: 100%;
+}
+
+
+.main .content .tweet .text-box input{
+  flex: 100%;
+  outline: none;
+} 
+
+.main .content .tweet .text-box .reply-rule {
+  padding-top: 2%;
+}
+
+.main .content .tweet .text-box .reply-rule a{
+  text-decoration: none;
+  font-size: 10px;
+}
+
+
+
+.main .content .tweet .text-box .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0%;
+  flex-direction: row;
+  width: auto;
+}
+
+
+.main .content .tweet .text-box .btn button{
+  display: inline-block;
+  background-color:rgb(29, 161, 242) ;
+  margin-right: 10px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 5px 3px;
+  width: 120px;
+  height: auto;
+  font-size: auto;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  flex-wrap: nowrap;
+}
+
+.main .content .tweet .text-box .btn a{
+  text-decoration: none;
+  color: rgb(28,155,239);
+}
+
+
+.main .content .tweet .text-box .btn img{
+  height: 20px;
+  width:20px;
+  margin-right: 20px;
+}
+
+/* tweet section */
+
+
+.main .content .twit {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid;
+}
+
+.main .content .twit .comment {
+  display: flex;
+}
+
+.main .content .twit .comment .circle{
+  width: 45px;
+	height: 40px;
+	position: relative;
+	border: solid rgb(196, 219, 238) 2px;
+	border-radius: 50%;
+	box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgb(204,214,221);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.main .content .twit .comment .circle img{
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+  background-color: rgb(204,214,221);
+}
+
+.main .content .twit .tweet_content{
+  width: 100%;
+  height: 100%;
+}
+
+.main .content .twit .tweet_content .user-text{
+ width: 100%;
+ height: 100%;
+ display: flex;
+}
+
+.main .content .twit .tweet_content .user-text .name{
+  color: rgb(203, 203, 203);
+  margin-right: 5px;
+}
+
+.main .content .twit .tweet_content .text{
+  color: rgb(203, 203, 203);
+  font-size: small;
+}
+
+.main .content .twit .tweet_content .like{
+  padding-top: 5%;
+  width: 75%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0%;
+  margin-bottom: 10px;
+}
+
+.main .content .twit .tweet_content .like img{
+  width: 15px;
+  height: 15px;
+}
+
+
+.main .content .twit .tweet_content .fot {
+  width: 100%;
+  height: 100%;
+}
+
+.main .content .twit .comment{
+  margin-right: 5%;
+}
+
+
+
+.main .content .twit .tweet_content .font .input_img{
+  background-image: url(./images/viacheslav-marushchenko-5GR-XAFxVzU-unsplash.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  margin-top: 10px;
+}
+
+
+
+
+/* right section */
+
+.right .content .search input{
+  margin-top: 5%;
+  margin-left: 30px;
+  border-radius: 2rem;
+  border: none;
+  text-decoration: none;
+  background-color: rgb(75, 75, 75);
+  font-size: small;
+  padding: 2% 0%;
+  padding-right: 20%;
+  padding-left: 2%;
+  width: 300px;
+  appearance: auto;
+}
+
+.right .content .now{
+  margin-top: 5%;
+  padding-top: 5%;
+  margin-left: 30px;
+  width: 300px;
+  height: auto;
+  background-color: rgb(75, 75, 75);
+  border-radius: 2rem;
+  z-index: -1;
+  color: rgb(203, 203, 203);
+}
+
+.right .content .now h4 {
+  background-color: rgb(75, 75, 75);
+  width: 75%;
+  margin-left: 5%;
+}
+
+.right .content .now .topic{
+  margin-top: 2%;
+}
+
+.right .content .now .topic p{
+  margin: 0;
+  padding-left: 5%;
+  background-color: rgb(75, 75, 75);
+}
+
+.right .content .now .topic .tag{
+  color: gray;
+  font-size: small;
+}
+
+.right .content .now .More{
+  background-color: rgb(75, 75, 75);
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  border-radius: 2rem;
+}
+
+.right .content .now .More a{
+  text-decoration: none;
+  background-color: rgb(75, 75, 75);
+  padding-left: 10px;
+  font-weight: 400;
+  color: rgb(28,155,239);
+}
+
+.right .content .recomendation{
+  margin-top: 5%;
+  padding-top: 5%;
+  margin-left: 30px;
+  width: 300px;
+  height: auto;
+  background-color: rgb(75, 75, 75);
+  border-radius: 2rem;
+  z-index: -1;
+  color: rgb(203, 203, 203);
+}
+
+.right .content .recomendation .user-info{
+  display: flex;
+  align-items: center;
+  background-color: rgb(75, 75, 75);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.right .content .recomendation img{
+  width: 10%;
+  height: 10%;
+  background-color: rgb(75, 75, 75);
+}
+
+.right .content .recomendation h4{
+  background-color: rgb(75, 75, 75);
+  padding-left: 15px;
+}
+
+.right .content .recomendation .user-info .circle{
+  width: 40px;
+	height: 40px;
+	position: relative;
+	border: solid rgb(204,214,221) 2px;
+	border-radius: 50%;
+	box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgb(204,214,221);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.right .content .recomendation .user-info .circle img{
+  position: absolute;
+  width: 30px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+  background-color:rgb(204,214,221);
+}
+
+.right .content .recomendation .user-info .user_name p{
+  margin-bottom: 0;
+  background-color: rgb(75, 75, 75);
+}
+
+.right .content .recomendation .user-info .user_name{
+  color: rgb(203, 203, 203);
+  margin-bottom: 0;
+}
+
+
+.right .content .recomendation .user-info .user_name .adress{
+  font-size: small;
+}
+
+.right .content .recomendation .user-info button{
+  background-color: rgb(203, 203, 203);
+  border: none;
+  border-radius: 2rem;
+  padding: 1px 20px;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+
+
+.right .content .recomendation .More{
+  background-color: rgb(75, 75, 75);
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-radius: 2rem;
+  padding-left: 5px;
+}
+
+.right .content .recomendation .More a{
+  text-decoration: none;
+  background-color: rgb(75, 75, 75);
+  padding-left: 10px;
+  font-weight: 400;
+  color: rgb(28,155,239);
+}
+
+@media screen and (max-width:1250px){
+
+  .top-left .icon .status{
+    margin-left: 80%;
+  }
+
+  .top-left .icon .logo_box .logo_name{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:970px){
+  .right{
+    display: none;
+    margin-left:0%;
+    margin-right: auto;
+  }
+  
+}
+
+
+_:-ms-lang(x)::-ms-backdrop, body {
+  background-color: #aaa;
+}
+
+_:-ms-lang(x)::backdrop, body {
+  background-color: #bbb;
+}
+
+_:lang(x)::-ms-, body {
+  background-color: #bbb;
+}
+
+_:lang(x)::-internal-media-controls-overlay-cast-button, body {
+  background-color: #ccc;
+}
+
+_:lang(x)::-moz-placeholder, body {
+  background-color: #ddd;
+}
+
+_:lang(x)+_:-webkit-full-screen-document, body {
+  background-color: red;
+}
